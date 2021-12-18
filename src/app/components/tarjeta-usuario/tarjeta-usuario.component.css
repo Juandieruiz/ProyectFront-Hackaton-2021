@@ -16,6 +16,7 @@
 h1 {
   text-align: center;
   margin-top: 40px;
+  height:30%;
 }
 
 .img-init {
@@ -68,12 +69,25 @@ h1 {
 }
 
 .p-4.rounded-3.text-center {
+  display: grid;
+  grid-template-columns: 30% 70%!important;
   margin: auto 10rem !important;
 }
 
 .progress {
-  width: 25%;
+  width: 23%;
   margin: 30px;
   top: 70%;
   position: absolute;
 }
+
+h1{
+  position: relative;
+
+}
+
+.welcome-code{
+  margin-top: -80px;
+  background-color: transparent;
+}
+
