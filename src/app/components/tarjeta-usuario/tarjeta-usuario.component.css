@@ -76,9 +76,9 @@ h1 {
 }
 
 .progress {
-  width: 22.5%;
+  width: 23%;
   margin: 30px;
-  top: 76%;
+  top: 77%;
   position: absolute;
 }
 
@@ -88,7 +88,7 @@ h1{
 }
 
 .welcome-code{
-  margin-top: -80px;
+  margin-top: -70px;
   background-color: transparent;
   margin-bottom: 80px;
 }
