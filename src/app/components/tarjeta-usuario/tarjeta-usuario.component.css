@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
+
+.container {
+  display: flex;
+  width: 100% !important;
+  min-height: 500px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container div {
+  min-width: 50%;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.img-init {
+  position: relative;
+  background-color: #403e40;
+}
+
+.img-init > img {
+  max-height: 80%;
+  position: absolute;
+  left: 0rem;
+  margin: 30px 0px 0px 30px;
+}
+
+.lista {
+  color: white;
+  list-style: none;
+  padding-top: 15px;
+}
+
+.p-4 {
+  padding: 1.5rem 0rem 5rem 0rem !important;
+}
+
+@media (max-width: 992px) {
+  .p-4.rounded-3.text-center {
+    display: block !important;
+  }
+  .img-init > img {
+    position: relative;
+  }
+}
+
+.tab-nofocus {
+  background-color: #495057;
+}
+
+.modal-body {
+  background-color: #323032;
+  color: white;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.modal-footer {
+  background-color: #323032;
+  border-color: #323032;
+}
+
+.p-4.rounded-3.text-center {
+  margin: auto 10rem !important;
+}
+
+.progress {
+  width: 25%;
+  margin: 30px;
+  top: 70%;
+  position: absolute;
+}

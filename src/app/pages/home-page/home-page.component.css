@@ -1,0 +1,12 @@
+.chat {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #20c997;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+}

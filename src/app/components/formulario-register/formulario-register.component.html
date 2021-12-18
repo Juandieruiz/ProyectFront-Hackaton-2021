@@ -1,0 +1,10 @@
+<div class="flex-container">
+  <div class="flex-item">
+    <form [formGroup]="registerForm" (ngSubmit)="register()">
+      <input formControlName="email" placeholder="Email" type="email" required>
+      <input formControlName="password" placeholder="Password" type="password">
+      <input formControlName="confirmPassword" placeholder="Confirm password" type="password">
+      <input [disabled]="registerForm.invalid" type="submit" value="Sign up">
+    </form>
+  </div>
+</div>

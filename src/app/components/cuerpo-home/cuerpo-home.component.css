@@ -1,0 +1,17 @@
+.container.px-lg-5 {
+  padding-bottom: 5rem;
+}
+
+.modal-body {
+  background-color: #323032;
+  color: white;
+}
+
+.modal-footer {
+  background-color: #323032;
+  border-color: #323032;
+}
+
+.modal-footer button {
+  background-color: white;
+}

@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  background-color: #323032;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.flex-item {
+  background-color: #323032;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: #323032;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input {
+  width: 80%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  text-indent: 10px;
+  outline: none;
+  color: black;
+}
+
+input:last-of-type {
+  background: #198754;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 25px;
+  text-indent: 0px;
+  color: black;
+}
+
+input:last-of-type:hover {
+  cursor: pointer;
+  color: black;
+}
+
+span {
+  margin-top: 10px;
+  color: #198754;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 550px) {
+  .flex-item {
+    width: 90%;
+  }
+}

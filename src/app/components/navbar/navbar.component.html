@@ -1,0 +1,46 @@
+<!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container px-lg-5">
+    <div class="logo">
+      <div class="glass">
+        <img src="./assets/logo-green.png" alt="Logo_code">
+      </div>
+    </div>
+    <div class="acceso">
+      <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <a class="btn btn-primary btn-lg" href="#!" (click)="open(login)">Acceder/Registrarse</a>
+      </div>
+    </div>
+    <a class="navbar-brand" href="#!"> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+        class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#!">Aprende a Programar</a></li>
+        <li class="nav-item"><a class="nav-link" href="#!">Formaciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#!">Ayuda</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<ng-template #login let-modal>
+  <div class="modal-body no-padding">
+    <div class="tabs">
+      <div id="login-tab" class="tab" (click)="switchForm()" [class.tab-nofocus]="!displayLogin">ACCEDE</div>
+      <div id="singup-tab" class="tab" (click)="switchForm()" [class.tab-nofocus]="displayLogin">REGISTRATE</div>
+    </div>
+    <ng-template [ngIf]="displayLogin" [ngIfElse]="registerForm">
+      <app-formulario-login></app-formulario-login>
+    </ng-template>
+    <ng-template #registerForm>
+      <app-formulario-register></app-formulario-register>
+    </ng-template>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close()">Cerrar</button>
+  </div>
+</ng-template>

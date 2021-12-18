@@ -1,0 +1,10 @@
+<div class="flex-container">
+  <div class="flex-item">
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <input formControlName="email" placeholder="Email" type="email" required>
+      <input formControlName="password" placeholder="Password" type="password">
+      <input [disabled]="loginForm.invalid" type="submit" value="Sign in">
+      <span [routerLink]="['/restore-password']">Forgot password?</span>
+    </form>
+  </div>
+</div>

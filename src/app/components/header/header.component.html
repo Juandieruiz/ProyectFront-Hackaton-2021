@@ -1,0 +1,67 @@
+<header class="py-5">
+
+  <div class="p-4 rounded-3 text-center">
+    <div class="img-init">
+      <img src="./assets/video-preview.png" alt="">
+      <div class="buttons">
+        <button type="button" class="btn btn-primary btn-lg" (click)="openxl(video)">Play</button>
+        <button type="button" class="btn btn-primary btn-lg" (click)="open(info)">Info</button>
+      </div>
+    </div>
+    <div class="welcome-code ">
+      <h1 class="display-5 fw-bold">My code Bienvenido!</h1>
+      <p class="fs-4">
+        ¡Aprender a programar puede ser fácil y divertido!</p>
+      <a class="btn btn-primary btn-lg" href="#!" (click)="open(login)">Empezar</a>
+    </div>
+  </div>
+
+</header>
+
+<ng-template #video let-modal>
+  <div class="modal-body">
+    <iframe width="765" height="465" src="https://www.youtube.com/embed/Zs1XGVRGnT8" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close()">Cerrar</button>
+  </div>
+</ng-template>
+
+<ng-template #info let-modal>
+  <div class="modal-body">
+    OhMyCode, es la plataforma que te dará la oportunidad de aprender desde cero y especializarte en una o varias ramas
+    del
+    sector, de una forma didáctica y divertida, con una teoría amena donde adquirirás
+    los conocimientos necesarios sobre la materia y mas tarde lo pondrás en práctica mediante gamificación, con un
+    ejemplo basado en
+    la vida real dando fin a cada tema con un test que te permitirá subir de nivel
+    y seguir avanzando en un aprendizaje sin límites.
+    También contarás con un espacio donde poder exponer dudas, ejercicios e ideas propias y de una herramienta de
+    comunicación en tiempo real,
+    creando así, un entorno de trabajo en equipo desde el primer momento sin tener que salir de la plataforma.
+    Aprenderás al máximo sin olvidar que programar puede ser muy divertido.
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close()">Cerrar</button>
+  </div>
+</ng-template>
+
+<ng-template #login let-modal>
+  <div class="modal-body no-padding">
+    <div class="tabs">
+      <div id="login-tab" class="tab" (click)="switchForm()" [class.tab-nofocus]="!displayLogin">ACCEDE</div>
+      <div id="singup-tab" class="tab" (click)="switchForm()" [class.tab-nofocus]="displayLogin">REGISTRATE</div>
+    </div>
+    <ng-template [ngIf]="displayLogin" [ngIfElse]="registerForm">
+      <app-formulario-login></app-formulario-login>
+    </ng-template>
+    <ng-template #registerForm>
+      <app-formulario-register></app-formulario-register>
+    </ng-template>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close()">Cerrar</button>
+  </div>
+</ng-template>
