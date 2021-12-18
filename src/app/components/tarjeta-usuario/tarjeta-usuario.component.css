@@ -38,7 +38,7 @@ h1 {
 }
 
 .p-4 {
-  padding: 1.5rem 0rem 5rem 0rem !important;
+  padding: 1.5rem 0rem 0rem 0rem !important;
 }
 
 @media (max-width: 992px) {
@@ -72,12 +72,13 @@ h1 {
   display: grid;
   grid-template-columns: 30% 70%!important;
   margin: auto 10rem !important;
+  background-color: #403e40!important;
 }
 
 .progress {
-  width: 23%;
+  width: 22.5%;
   margin: 30px;
-  top: 70%;
+  top: 76%;
   position: absolute;
 }
 
@@ -89,5 +90,6 @@ h1{
 .welcome-code{
   margin-top: -80px;
   background-color: transparent;
+  margin-bottom: 80px;
 }
 
