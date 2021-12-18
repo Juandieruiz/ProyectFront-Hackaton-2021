@@ -12573,3 +12573,9 @@ section.pt-4 {
   position: relative;
   display: flex;
 }
+
+
+body{
+  position:inherit!important;
+  overflow: auto!important;
+}
